@@ -2,7 +2,11 @@ import DecorateIcon from "@/components/common/ui/DecorateIcon";
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-import { TiSocialGithub, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
+import {
+  TiSocialGithub,
+  TiSocialLinkedin,
+  TiSocialTwitter,
+} from "react-icons/ti";
 
 export const metadata: Metadata = {
   title: "Phinehas Osei-Tutu | Frontend Engineer",
@@ -26,9 +30,15 @@ const Home: React.FC = () => {
           and a little on mobile development.
         </p>
         <div className="media inline-flex gap-3">
-          <DecorateIcon children={<TiSocialLinkedin size={25} />} route="https://linkedin.com/in/poseitutu10" />
-          <DecorateIcon children={<TiSocialGithub size={25} />} route="https://github.com/poseitutu10" />
-          <DecorateIcon children={<TiSocialTwitter size={25} />} route="#" />
+          <DecorateIcon route="https://linkedin.com/in/poseitutu10">
+            <TiSocialLinkedin size={25} />
+          </DecorateIcon>
+          <DecorateIcon route="https://github.com/poseitutu10">
+            <TiSocialGithub size={25} />
+          </DecorateIcon>
+          <DecorateIcon route="#">
+            <TiSocialTwitter size={25} />
+          </DecorateIcon>
         </div>
       </div>
       <div className="right md:w-1/2 p-5">
