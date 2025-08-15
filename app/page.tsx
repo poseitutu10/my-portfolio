@@ -1,6 +1,7 @@
 import DecorateIcon from "@/components/common/ui/DecorateIcon";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   TiSocialGithub,
@@ -23,11 +24,11 @@ const Home: React.FC = () => {
           solutions with technology.
         </h2>
         <p className="text-sm">
-          Hello there, I am Phinehas, a software developer from Ghana.
-          Experienced in collaborating effectively with cross-functional teams
-          to deliver high-quality solutions that meet user needs and enhance
-          overall user experience. Possesses a strong understanding in front-end
-          and a little on mobile development.
+          Hello there, I am <Link href={`/about`}>Phinehas</Link> , a software
+          developer from Ghana. Experienced in collaborating effectively with
+          cross-functional teams to deliver high-quality solutions that meet
+          user needs and enhance overall user experience. Possesses a strong
+          understanding in front-end and a little on mobile development.
         </p>
         <div className="media inline-flex gap-3">
           <DecorateIcon route="https://linkedin.com/in/poseitutu10">

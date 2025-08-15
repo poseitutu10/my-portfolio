@@ -4,6 +4,7 @@ import NavLink from "./ui/NavLink";
 import { TiThMenu } from "react-icons/ti";
 
 const Header: React.FC = () => {
+  
   return (
     <header className="flex justify-between items-center ">
       <Link href={`/`} className="text-sky-600 font-semibold">Phinehas.</Link>

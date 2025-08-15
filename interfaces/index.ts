@@ -16,5 +16,16 @@ export interface ChildrenProps {
 }
 
 export interface DecoIconsProps extends ChildrenProps {
-  route: string
+  route: string;
+}
+
+export interface ContextProps {
+  nav: string;
+  selectNav: (data: string) => void;
+}
+
+export interface InfoTextProps {
+  header: string;
+  description: string;
+  elements?: React.ReactNode;
 }

@@ -5,6 +5,10 @@
   --foreground: #19142a;
 }
 
+.header-customized {
+  @apply text-lg text-sky-600
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
