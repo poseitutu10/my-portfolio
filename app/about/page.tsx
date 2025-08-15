@@ -13,7 +13,7 @@ const About: React.FC = () => {
   return (
     <section>
       <div className="flex flex-col md:flex-row gap-10 my-16">
-        <div className="md:w-1/4 p-5">
+        <div className="md:w-1/4 px-5">
           <Image
             src={profile}
             alt="profile-pic"
