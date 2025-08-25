@@ -26,6 +26,10 @@ export interface ContextProps {
 
 export interface InfoTextProps {
   header: string;
-  description: string;
+  description?: string;
   elements?: React.ReactNode;
+}
+
+export interface SkillCardProps {
+  skill: string
 }

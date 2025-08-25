@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   
   return (
     <header className="flex justify-between items-center ">
-      <Link href={`/`} className="text-sky-600 font-semibold">Phinehas.</Link>
+      <Link href={`/`} className="text-sky-600 text-lg font-semibold tracking-tight">Phinehas.</Link>
       <nav>
         <ul className="hidden md:flex items-center gap-3">
           <NavLink name="Home" route="/" />
